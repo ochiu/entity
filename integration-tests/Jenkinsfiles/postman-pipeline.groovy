@@ -52,10 +52,6 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             secretEnvVar(key: 'CLIENT_SECRET', secretName: "integration-${TAG_NAME}-secret", secretKey: 'client_secret'),
             secretEnvVar(key: 'CLIENT_ID', secretName: "integration-${TAG_NAME}-secret", secretKey: 'client_id'),
             secretEnvVar(key: 'SERVICE_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: "${COMPONENT_NAME}_url"),
-            secretEnvVar(key: 'STAFF_TOKEN_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_token_url'),
-            secretEnvVar(key: 'STAFF_SERVICE_ACCOUNT_ID', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_service_account_id'),
-            secretEnvVar(key: 'STAFF_SERVICE_ACCOUNT_SECRET', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_service_account_secret'),
-            secretEnvVar(key: 'STAFF_ACCOUNT_ID', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_account_id')
         ])
     )
 ])

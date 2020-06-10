@@ -83,12 +83,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         --global-var auth_url=${AUTH_URL} --global-var realm=${REALM} \
                         --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
                         --global-var username=${USERNAME} --global-var client_id=${CLIENT_ID} \
-                        --global-var url=${SERVICE_URL} \
-                        --global-var staff-token-url=${STAFF_TOKEN_URL} \
-                        --global-var staff-service-account-id=${STAFF_SERVICE_ACCOUNT_ID} \
-                        --global-var staff-service-account-secret=${STAFF_SERVICE_ACCOUNT_SECRET} \
-                        --global-var staff_account_id=${STAFF_ACCOUNT_ID} \
-                        --global-var legal_api_url=${SERVICE_URL}
+                        --global-var url=${SERVICE_URL} 
                         """
                     } catch (Exception e) {
                         echo "One or more tests failed."
